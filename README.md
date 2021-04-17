@@ -3,8 +3,11 @@ This repository contains the **pseudocode** and **python solution** for **CIE pr
 To the best of my ability, I have completed all the requirements given for the three tasks.<br>
 I also have tried my best to correct any errors found in my solution. *If you do find any errors please let me know, Thank you.*<br>
 If you have any suggestions regarding the solution. Please feel free to share them.<br>
-<br>
->This Solution is provided by **@Dunroxiz**<br>
+
+###### *IN NO EVENT SHALL THE AUTHOR(s) OF THE PRE-RELEASE SOLUTION PROVIDED IN THIS REPOSITORY BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, ARISING FROM, OUT OF OR IN CONNECTION WITH THE PRE-RELEASE SOLUTION PROVIDED IN THIS REPOSITORY OR THE USE OR OTHER DEALINGS IN THE PRE-RELEASE SOLUTION PROVIDED IN THIS REPOSITORY.*<br>
+
+
+> This Solution is provided by **@Dunroxiz**<br>
 
 _____________
 ## Paper 2 Problem-solving and Programming May/June 2021 - PRE-RELEASE MATERIAL<br>
