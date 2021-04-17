@@ -1,5 +1,6 @@
 # Paper 2 Problem-solving and Programming - PRE-RELEASE MATERIAL SOLUTON - 0478/22 - MAY/JUNE 2021
 This repository contains the **pseudocode** and **python solution** for **CIE pre-release material 2021 Paper 22 May/June**.<br>
+The pseudocode solution is written using the Pseudocode Guide for Teachers given by Cambridge<br>
 To the best of my ability, I have completed all the requirements given for the three tasks.<br>
 I also have tried my best to correct any errors found in my solution. *If you do find any errors please let me know, Thank you.*<br>
 If you have any suggestions regarding the solution. Please feel free to share them.<br>
