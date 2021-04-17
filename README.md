@@ -2,12 +2,12 @@
 This repository contains the **pseudocode** and **python solution** for **CIE pre-release material 2021 Paper 22 May/June**.<br>
 To the best of my ability, I have completed all the requirements given for the three tasks.<br>
 I also have tried my best to correct any errors found in my solution. *If you do find any errors please let me know, Thank you.*<br>
+If you have any suggestions regarding the solution. Please feel free to share them.<br>
 <br>
 >This Solution is provided by **@Dunroxiz**<br>
 
 _____________
-Paper 2 Problem-solving and Programming May/June 2021<br>
-PRE-RELEASE MATERIAL<br>
+## Paper 2 Problem-solving and Programming May/June 2021 - PRE-RELEASE MATERIAL<br>
 
 Your preparation for the examination should include attempting the following practical tasks by writing
 and testing a program or programs.<br>
