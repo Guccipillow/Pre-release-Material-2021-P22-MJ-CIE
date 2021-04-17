@@ -46,16 +46,14 @@ def ScreenDisplay():  # DECLARING PROCEDURE
             print(
                 "Train No:", index, "| Train Return Hour:", DownTime[index], "| Closed!"
             )
-        print()  # IGNORE
-        print("-----------------------\n")  # IGNORE
-
-
+        print()
+        print("-----------------------\n")
 # ENDPROCEDURE
 
-ScreenDisplay()  # CALL
+ScreenDisplay()  # CALL PROCEDURE
 
 # ----------- TASK 2 -----------
-NumOfPassengers = UpTrip = DownTrip = FreeTickets = 0  # INTEGER
+NumOfPassengers = UpTrip = DownTrip = FreeTickets = 0
 OneWayTicket = 25.0  # CONSTANT
 OneWayCost = 0.0  # REAL
 # DECLARE num : INTEGER //for FOR loops
@@ -67,7 +65,7 @@ while choice != "True" and choice != "False":
     choice = input("Enter 'True' for yes and 'False' for no: ")
 
 while choice != "False":
-    print("\n-----------------------\n")  # IGNORE
+    print("\n-----------------------\n")
     #
     UpTrip = int(input("Enter Train number corresponding to your departure hour: "))
     while UpTrip not in range(0, 4):
@@ -83,18 +81,18 @@ while choice != "False":
             " | Remaining Tickets:",
             DownSeats[num],
         )
-    print()  # IGNORE
+    print()
     DownTrip = int(input("Enter Train number corresponding to your Return hour: "))
     while DownTrip < UpTrip or DownTrip > 3:
         DownTrip = int(input("Error! Enter Train number from the given list above: "))
     #
-    print()  # IGNORE
+    print()
     NumOfPassengers = int(input("Enter number of passengers for trip: "))
     while NumOfPassengers <= 0:
         NumOfPassengers = int(input("Error! Enter number greater than 0: "))
 
     if NumOfPassengers > UpSeats[UpTrip] or NumOfPassengers > DownSeats[DownTrip]:
-        print("\n####################\n")  # IGNORE
+        print("\n####################\n")
         print("Seats not available for chosen hours")
         print("Please check the display below for available Seats =>")
 
@@ -114,7 +112,7 @@ while choice != "False":
         DownSeats[DownTrip] = DownSeats[DownTrip] - NumOfPassengers
         DownMoneyTotal[DownTrip] = DownMoneyTotal[DownTrip] + OneWayCost
 
-    ScreenDisplay()
+    ScreenDisplay() #CALL PROCEDURE
     print("Do you want to buy ticket(s)? 'True' for yes and 'False' for no")
     choice = input()
     while choice != "True" and choice != "False":
@@ -127,9 +125,9 @@ MaxTrain = ""  # STRING (Empty)
 MostPassengers = 0  # INTEGER
 # DECLARE count : INTEGER //for FOR loops
 
-print("\n")  # IGNORE
+print("\n")
 print(" ------ END OF THE DAY ------ ")
-print("\n")  # IGNORE
+print("\n")
 for counti in range(0, 4):
     print(
         "Train No:",
@@ -151,7 +149,7 @@ for counti in range(0, 4):
         "\t| Total money:",
         DownMoneyTotal[counti],
     )
-    print("\n-----------------------\n")  # IGNORE
+    print("\n-----------------------\n")
 
 for index in range(0, 4):
     TotalPassengers = TotalPassengers + UpPassengers[index]
@@ -168,5 +166,5 @@ for count in range(0, 4):
 print("Total money earned today:", TotalAmount)
 print("Total passengers travelled today:", TotalPassengers)
 print("The train journey with the highest number of passengers today:", MaxTrain)
-input("Press Enter to Exit!")  # IGNORE
+input("Press Enter to Exit!")
 
