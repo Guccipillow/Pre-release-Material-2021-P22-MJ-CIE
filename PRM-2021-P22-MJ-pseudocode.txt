@@ -10,7 +10,7 @@ DECLARE UpMoneyTotal : ARRAY[0:4] OF REAL
 DECLARE DownTime : ARRAY[0:3] OF STRING 
 DECLARE DownSeats : ARRAY[0:3] OF INTEGER
 DECLARE DownPassengers : ARRAY[0:3] OF INTEGER 
-DECLARE DownMoneyTotal : ARRAY[0:4] OF REAL 
+DECLARE DownMoneyTotal : ARRAY[0:3] OF REAL 
 
 UpTime <- {"09:00", "11:00", "13:00", "15:00"}
 UpSeats <- {480, 480, 480, 480}
