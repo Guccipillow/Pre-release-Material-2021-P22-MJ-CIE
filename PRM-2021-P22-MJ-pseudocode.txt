@@ -144,10 +144,8 @@ DECLARE index : INTEGER
 
 PRINT "----- END OF THE DAY -----"
 FOR index <- 0 TO 3
-    PRINT ("Train No: ", index, "| Train Departure Hour: ", UpTime[index], "| Number of passengers: ", UpPassengers[index], 
-"| Total money: ", UpMoneyTotal[index])
-    PRINT ("Train No: ", index, "| Train Return Hour: ", DownTime[index], "| Number of passengers: ", DownPassengers[index],
-"| Total money: ", DownMoneyTotal[index])
+    PRINT ("Train No: ", index, "| Train Departure Hour: ", UpTime[index], "| Number of passengers: ", UpPassengers[index], "| Total money: ", UpMoneyTotal[index])
+    PRINT ("Train No: ", index, "| Train Return Hour: ", DownTime[index], "| Number of passengers: ", DownPassengers[index], "| Total money: ", DownMoneyTotal[index])
     PRINT ""  // EMPTY LINE
 NEXT index
 
