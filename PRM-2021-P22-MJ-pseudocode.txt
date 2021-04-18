@@ -94,20 +94,20 @@ WHILE choice = True DO
             PRINT "/// SEATS BOOKED ///"
             IF NumOfPassengers >= 10 and NumOfPassengers <= 80
                 THEN
-                    FreeTickets = NumOfPassengers DIV 10 // DIV is INTEGER DIVISION
+                    FreeTickets <- NumOfPassengers DIV 10     // DIV is INTEGER DIVISION
                 ELSE
-                    FreeTickets = 0
+                    FreeTickets <- 0
             ENDIF
             
-            OneWayCost = (NumOfPassengers - FreeTickets) * OneWayTicket
+            OneWayCost <- (NumOfPassengers - FreeTickets) * OneWayTicket
             
-            UpPassengers[UpTrip] = UpPassengers[UpTrip] + NumOfPassengers
-            UpSeats[UpTrip] = UpSeats[UpTrip] - NumOfPassengers
-            UpMoneyTotal[UpTrip] = UpMoneyTotal[UpTrip] + OneWayCost
+            UpPassengers[UpTrip] <- UpPassengers[UpTrip] + NumOfPassengers
+            UpSeats[UpTrip] <- UpSeats[UpTrip] - NumOfPassengers
+            UpMoneyTotal[UpTrip] <- UpMoneyTotal[UpTrip] + OneWayCost
             
-            DownPassengers[DownTrip] = DownPassengers[DownTrip] + NumOfPassengers
-            DownSeats[DownTrip] = DownSeats[DownTrip] - NumOfPassengers
-            DownMoneyTotal[DownTrip] = DownMoneyTotal[DownTrip] + OneWayCost
+            DownPassengers[DownTrip] <- DownPassengers[DownTrip] + NumOfPassengers
+            DownSeats[DownTrip] <- DownSeats[DownTrip] - NumOfPassengers
+            DownMoneyTotal[DownTrip] <- DownMoneyTotal[DownTrip] + OneWayCost
     ENDIF
     PRINT ">>>>>    TRAIN JOURNEY DISPLAY    <<<<<"
     FOR index <- 0 TO 3
@@ -152,20 +152,20 @@ FOR index <- 0 TO 3
 NEXT index
 
 FOR index <- 0 TO 3
-    TotalPassengers = TotalPassengers + UpPassengers[index]
-    TotalAmount = TotalAmount + (UpMoneyTotal[index] * 2)
+    TotalPassengers <- TotalPassengers + UpPassengers[index]
+    TotalAmount <- TotalAmount + (UpMoneyTotal[index] * 2)
 ENDIF
 
 FOR index <- 0 TO 3
-    IF UpPassengers[count] > MostPassengers
+    IF UpPassengers[index] > MostPassengers
         THEN
-            MostPassengers = UpPassengers[count]
-            MaxTrain = UpTime[count]
+            MostPassengers <- UpPassengers[index]
+            MaxTrain <- UpTime[index]
     ENDIF
-    IF DownPassengers[count] > MostPassengers
+    IF DownPassengers[index] > MostPassengers
         THEN
-            MostPassengers = DownPassengers[count]
-            MaxTrain = DownTime[count]
+            MostPassengers <- DownPassengers[index]
+            MaxTrain <- DownTime[index]
     ENDIF
 NEXT index
 
