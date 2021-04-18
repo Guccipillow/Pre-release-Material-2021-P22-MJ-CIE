@@ -5,6 +5,12 @@ To the best of my ability, I have completed all the requirements given for the t
 I also have tried my best to correct any errors found in my solution. *If you do find any errors please let me know, Thank you.*<br>
 If you have any suggestions regarding the solution. Please feel free to share them.<br>
 
+Files in this repository:
+- PRM-2021-P22-MJ-pseudocode.docx
+- PRM-2021-P22-MJ-pseudocode.pdf
+- PRM-2021-P22-MJ-pseudocode.txt
+- PRM-2021-P22-MJ-python solution.py
+
 ###### *IN NO EVENT SHALL THE AUTHOR(s) OF THE PRE-RELEASE SOLUTION PROVIDED IN THIS REPOSITORY BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, ARISING FROM, OUT OF OR IN CONNECTION WITH THE PRE-RELEASE SOLUTION PROVIDED IN THIS REPOSITORY OR THE USE OR OTHER DEALINGS IN THE PRE-RELEASE SOLUTION PROVIDED IN THIS REPOSITORY.*<br>
 
 
