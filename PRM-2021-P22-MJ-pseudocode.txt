@@ -133,13 +133,14 @@ WHILE choice = True DO
         INPUT choice
     ENDWHILE
 ENDWHILE
+
 // TASK 3 VARIABLE DECLARATIONS
 DECLARE TotalAmount <- 0.0 : REAL
 DECLARE TotalPassengers, MostPassengers <- 0 : REAL
 DECLARE MaxTrain : STRING
 DECLARE index : INTEGER
 
-// TASK 2 ALGORITHM
+// TASK 3 ALGORITHM
 
 PRINT "----- END OF THE DAY -----"
 FOR index <- 0 TO 3
