@@ -14,7 +14,9 @@ Files in this repository:
 ###### *IN NO EVENT SHALL THE AUTHOR(s) OF THE PRE-RELEASE SOLUTION PROVIDED IN THIS REPOSITORY BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, ARISING FROM, OUT OF OR IN CONNECTION WITH THE PRE-RELEASE SOLUTION PROVIDED IN THIS REPOSITORY OR THE USE OR OTHER DEALINGS IN THE PRE-RELEASE SOLUTION PROVIDED IN THIS REPOSITORY.*<br>
 
 
-> This Solution is provided by **@Dunroxiz**<br>
+> This Solution is not wholly written by me. I have taken help from other solutions as well and produced one solution that I have found best.
+>
+> Provided by [Dunroxiz](https://github.com/Dunroxiz)
 
 _____________
 ## Paper 22 Problem-solving and Programming May/June 2021 - PRE-RELEASE MATERIAL<br>
