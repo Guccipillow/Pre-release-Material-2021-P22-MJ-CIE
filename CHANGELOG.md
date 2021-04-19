@@ -1,5 +1,5 @@
 
-### CHANGE #1: Coorection of Minor Mistakes
+### CHANGE #1: Correction of Minor Mistakes
 
 DATE: 18/04/2021
 
