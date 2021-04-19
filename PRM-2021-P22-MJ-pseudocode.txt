@@ -1,4 +1,4 @@
-// Paper 2 Problem-solving and Programming - PRE-RELEASE MATERIAL - 0478/22 - MAY/JUNE 2021
+// Paper 22 Problem-solving and Programming - PRE-RELEASE MATERIAL - 0478/22 - MAY/JUNE 2021
 
 // TASK 1 VARIABLE DECLARATIONS
 
@@ -28,22 +28,14 @@ DECLARE index : INTEGER     //for Loops
 
 PRINT ">>>>>    TRAIN JOURNEY DISPLAY    <<<<<"
 FOR index <- 0 TO 3
-    IF UpSeats[index] != 0
-        THEN
-            PRINT ("Train No: ", index, "| Train Departure Hour: ", UpTime[index], "| Remaining Tickets: ", UpSeats[index])
-        ELSE
-            PRINT ("Train No: ", index, "| Train Departure Hour: ", UpTime[index], "| Closed!")
-    ENDIF
-    
-    IF DownSeats[index] != 0
-        THEN
-            PRINT ("Train No: ", index, "| Train Return Hour: ", DownTime[index], "| Remaining Tickets: ", DownSeats[index])
-        ELSE
-            PRINT ("Train No: ", index, "| Train Return Hour: ", DownTime[index], "| Closed!")
-    ENDIF
+    PRINT ("Train No: ", index, "| Train Departure Hour: ", UpTime[index], "| Remaining Tickets: ", UpSeats[index])
+    PRINT ("Train No: ", index, "| Train Return Hour: ", DownTime[index], "| Remaining Tickets: ", DownSeats[index])
+    PRINT "---------"
 NEXT index
 
+
 // TASK 2 VARIABLE DECLARATIONS
+
 DECLARE FreeTickets <- 0 : INTEGER
 DECLARE CONSTANT OneWayTicket <- 25.0 : REAL
 DECLARE OneWayCost <- 0.0 : REAL
