@@ -1,3 +1,5 @@
+_________
+_________
 
 ### CHANGE #1: Correction of Minor Mistakes
 
@@ -7,6 +9,7 @@ commit https://github.com/Dunroxiz/Pre-release-Material-2021-P22-MJ-CIE/commit/2
 
 Author: @Dunroxiz
 
+**Explanation:**<br>
 Updated the pseudocode files because they had some minor mistakes. There are no changes to the Algorithms itself.
 There was a mistake in the last FOR loop.
 Sorry for the inconvenience.
@@ -24,7 +27,8 @@ commit https://github.com/Dunroxiz/Pre-release-Material-2021-P22-MJ-CIE/commit/b
 
 Author: @Dunroxiz
 
-Before, The task 1 *Train Journey Display* algorithm had an **IF** statement in the **FOR** loop to check if the tickets available or not. If tickets were not available it would **PRINT** that the Train for that hour is closed. 
+**Explanation:**<br>
+Before, The task 1 *Train Journey Display* algorithm had an **IF** statement in the **FOR** loop to check if the tickets were available or not. If tickets were not available it would **PRINT** that the Train for that hour is closed. 
 ```
 FOR index <- 0 TO 3
     IF UpSeats[index] != 0
@@ -56,3 +60,6 @@ NEXT index
 ```
 
 *Train Journey Display* algorithm in Task 2 remain unchanged.
+
+_________
+_________
