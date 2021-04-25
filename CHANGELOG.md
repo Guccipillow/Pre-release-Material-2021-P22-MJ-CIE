@@ -5,7 +5,7 @@ _________
 
 DATE: 18/04/2021
 
-commit https://github.com/Dunroxiz/Pre-release-Material-2021-P22-MJ-CIE/commit/204d2efe0fb520c519fd40f0f57ecb04c3d9e7da
+commit [204d2ef](https://github.com/Dunroxiz/Pre-release-Material-2021-P22-MJ-CIE/commit/204d2efe0fb520c519fd40f0f57ecb04c3d9e7da)
 
 Author: @Dunroxiz
 
@@ -23,7 +23,7 @@ _________
 
 Date: 19/04/2021
 
-commit https://github.com/Dunroxiz/Pre-release-Material-2021-P22-MJ-CIE/commit/b6f69d8a032417965916cb14851d00ff5e7799b0
+commit [b6f69d8](https://github.com/Dunroxiz/Pre-release-Material-2021-P22-MJ-CIE/commit/b6f69d8a032417965916cb14851d00ff5e7799b0)
 
 Author: @Dunroxiz
 
@@ -105,4 +105,60 @@ WHILE choice = True DO
 _________
 _________
 
+### CHANGE #4: Correction of Keyword error in FOR loop in TASK 3
 
+Date: 25/04/2021
+
+Author: @Dunroxiz
+
+commit [6e12d7b](https://github.com/Dunroxiz/Pre-release-Material-2021-P22-MJ-CIE/commit/6e12d7b0405348dd31041a089fbb79076cd644b8)
+
+**Explanation:**<br>
+
+Keyword error in **FOR** loop corrected in Task 3
+
+Before:
+```
+FOR index <- 0 TO 3
+    TotalPassengers <- TotalPassengers + UpPassengers[index]
+    TotalAmount <- TotalAmount + (UpMoneyTotal[index] * 2)
+ENDIF
+```
+
+After:
+```
+FOR index <- 0 TO 3
+    TotalPassengers <- TotalPassengers + UpPassengers[index]
+    TotalAmount <- TotalAmount + (UpMoneyTotal[index] * 2)
+NEXT index
+```
+<br>
+
+All pseudocode files have been updated
+_________
+_________
+### CHANGE #5: Datatype changed for 2 variables in TASK 3
+
+Date: 25/04/2021
+
+Author: @Dunroxiz
+
+commit [2ff0acb](https://github.com/Dunroxiz/Pre-release-Material-2021-P22-MJ-CIE/commit/2ff0acba2346d949552de0a579d7b8af60f42d8d)
+
+**Explanation:**<br>
+
+Datatype changed for 2 variables in Task 3<br>
+Datatype changed from **REAL** to **INTEGER** for **TotalPassengers, MostPassengers**.
+
+Before:
+`DECLARE TotalPassengers, MostPassengers <- 0 : REAL`
+
+After:
+`DECLARE TotalPassengers, MostPassengers <- 0 : INTEGER`
+
+<br>
+
+All pseudocode files have been updated
+
+_________
+_________
