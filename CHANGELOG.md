@@ -65,3 +65,44 @@ All pseudocode files have been updated!
 
 _________
 _________
+
+### CHANGE #3: Error corrected in UpTrip validation loop Task 2!
+
+Date: 25/04/2021
+
+commit [f5d2ab5](https://github.com/Dunroxiz/Pre-release-Material-2021-P22-MJ-CIE/commit/f5d2ab564ecea3137405f5503fbee94eb70066b6)
+
+Author: @Dunroxiz
+
+**Explanation:**<br>
+
+There was a mistake in the condition of the WHILE loop that was being used as a validation for UpTrip.
+**AND** have been changed to **OR**
+
+All the files have been corrected and updated.
+
+Before
+```
+WHILE choice = True DO
+    PRINT "Enter Train number corresponding to your departure hour: "
+    INPUT UpTrip
+    WHILE UpTrip < 0 AND UpTrip > 3 DO
+        PRINT "Error! Enter train number from (0, 1, 2, 3): "
+        INPUT UpTrip
+    ENDWHILE
+```
+After:
+```
+WHILE choice = True DO
+    PRINT "Enter Train number corresponding to your departure hour: "
+    INPUT UpTrip
+    WHILE UpTrip < 0 OR UpTrip > 3 DO
+        PRINT "Error! Enter train number from (0, 1, 2, 3): "
+        INPUT UpTrip
+    ENDWHILE
+```
+
+_________
+_________
+
+
