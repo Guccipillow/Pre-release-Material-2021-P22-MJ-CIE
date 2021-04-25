@@ -144,7 +144,7 @@ NEXT index
 FOR index <- 0 TO 3
     TotalPassengers <- TotalPassengers + UpPassengers[index]
     TotalAmount <- TotalAmount + (UpMoneyTotal[index] * 2)
-ENDIF
+NEXT index
 
 FOR index <- 0 TO 3
     IF UpPassengers[index] > MostPassengers
