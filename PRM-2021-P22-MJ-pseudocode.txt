@@ -128,7 +128,7 @@ ENDWHILE
 
 // TASK 3 VARIABLE DECLARATIONS
 DECLARE TotalAmount <- 0.0 : REAL
-DECLARE TotalPassengers, MostPassengers <- 0 : REAL
+DECLARE TotalPassengers, MostPassengers <- 0 : INTEGER
 DECLARE MaxTrain : STRING
 DECLARE index : INTEGER
 
