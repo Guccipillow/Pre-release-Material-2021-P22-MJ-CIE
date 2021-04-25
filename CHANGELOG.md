@@ -7,7 +7,7 @@ DATE: 18/04/2021
 
 commit [204d2ef](https://github.com/Dunroxiz/Pre-release-Material-2021-P22-MJ-CIE/commit/204d2efe0fb520c519fd40f0f57ecb04c3d9e7da)
 
-Author: @Dunroxiz
+Author: [**@Dunroxiz**](https://github.com/Dunroxiz)
 
 **Explanation:**<br>
 Updated the pseudocode files because they had some minor mistakes. There are no changes to the Algorithms itself.
@@ -25,7 +25,7 @@ Date: 19/04/2021
 
 commit [b6f69d8](https://github.com/Dunroxiz/Pre-release-Material-2021-P22-MJ-CIE/commit/b6f69d8a032417965916cb14851d00ff5e7799b0)
 
-Author: @Dunroxiz
+Author: [**@Dunroxiz**](https://github.com/Dunroxiz)
 
 **Explanation:**<br>
 Before, The task 1 *Train Journey Display* algorithm had an **IF** statement in the **FOR** loop to check if the tickets were available or not. If tickets were not available it would **PRINT** that the Train for that hour is closed. 
@@ -72,7 +72,7 @@ Date: 25/04/2021
 
 commit [f5d2ab5](https://github.com/Dunroxiz/Pre-release-Material-2021-P22-MJ-CIE/commit/f5d2ab564ecea3137405f5503fbee94eb70066b6)
 
-Author: @Dunroxiz
+Author: [**@Dunroxiz**](https://github.com/Dunroxiz)
 
 **Explanation:**<br>
 
@@ -109,7 +109,7 @@ _________
 
 Date: 25/04/2021
 
-Author: @Dunroxiz
+Author: [**@Dunroxiz**](https://github.com/Dunroxiz)
 
 commit [6e12d7b](https://github.com/Dunroxiz/Pre-release-Material-2021-P22-MJ-CIE/commit/6e12d7b0405348dd31041a089fbb79076cd644b8)
 
@@ -141,7 +141,7 @@ _________
 
 Date: 25/04/2021
 
-Author: @Dunroxiz
+Author: [**@Dunroxiz**](https://github.com/Dunroxiz)
 
 commit [2ff0acb](https://github.com/Dunroxiz/Pre-release-Material-2021-P22-MJ-CIE/commit/2ff0acba2346d949552de0a579d7b8af60f42d8d)
 
