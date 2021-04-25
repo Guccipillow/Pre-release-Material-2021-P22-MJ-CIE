@@ -54,7 +54,7 @@ ENDWHILE
 WHILE choice = True DO
     PRINT "Enter Train number corresponding to your departure hour: "
     INPUT UpTrip
-    WHILE UpTrip < 0 AND UpTrip > 3 DO
+    WHILE UpTrip < 0 OR UpTrip > 3 DO
         PRINT "Error! Enter train number from (0, 1, 2, 3): "
         INPUT UpTrip
     ENDWHILE
