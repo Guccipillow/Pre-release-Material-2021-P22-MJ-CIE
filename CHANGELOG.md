@@ -162,3 +162,29 @@ All pseudocode files have been updated
 
 _________
 _________
+### CHANGE #6: Keywords correction (No changes to the algorithm)
+
+Date: 26/04/2021
+
+Author: [**@Dunroxiz**](https://github.com/Dunroxiz)
+
+commit [2b6748b](https://github.com/Dunroxiz/Pre-release-Material-2021-P22-MJ-CIE/commit/2b6748b4bc0acef7c4f179f988b967f73d080e8d)
+
+**Explanation:**<br>
+
+Check commit to see the changes
+
+Before:
+
+`WHILE DownTrip < UpTrip OR DownTrip > 3:`<br>
+`WHILE NumOfPassengers <= 0:`
+
+After:
+
+`WHILE DownTrip < UpTrip OR DownTrip > 3 DO`<br>
+`WHILE NumOfPassengers <= 0 DO`
+
+All pseudocode files have been updated!
+
+_________
+_________
