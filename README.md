@@ -6,6 +6,9 @@ I also have tried my best to correct any errors found in my solution. *If you do
 If you have any suggestions regarding the solution. Please feel free to share them.<br>
 
 Files in this repository:
+- 0478_pseudocode_guide.pdf
+- 2210_S21_PM_22.pdf
+- CHANGELOG.md
 - PRM-2021-P22-MJ-pseudocode.docx
 - PRM-2021-P22-MJ-pseudocode.pdf
 - PRM-2021-P22-MJ-pseudocode.txt
