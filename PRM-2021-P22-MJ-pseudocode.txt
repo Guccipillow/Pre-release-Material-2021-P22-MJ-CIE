@@ -66,14 +66,14 @@ WHILE choice = True DO
     
     PRINT "Enter Train number corresponding to your Return hour: "
     INPUT DownTrip
-    WHILE DownTrip < UpTrip OR DownTrip > 3:
+    WHILE DownTrip < UpTrip OR DownTrip > 3 DO
         PRINT "Error! Enter Train number from the given list above: "
         INPUT DownTrip
     ENDWHILE
     
     PRINT "Enter number of passengers for trip: "
     INPUT NumOfPassengers
-    WHILE NumOfPassengers <= 0:
+    WHILE NumOfPassengers <= 0 DO
         PRINT "Error! Enter number greater than 0: "
         INPUT NumOfPassengers
     ENDWHILE
@@ -101,6 +101,7 @@ WHILE choice = True DO
             DownSeats[DownTrip] <- DownSeats[DownTrip] - NumOfPassengers
             DownMoneyTotal[DownTrip] <- DownMoneyTotal[DownTrip] + OneWayCost
     ENDIF
+    
     PRINT ">>>>>    TRAIN JOURNEY DISPLAY    <<<<<"
     FOR index <- 0 TO 3
         IF UpSeats[index] != 0
@@ -126,7 +127,9 @@ WHILE choice = True DO
     ENDWHILE
 ENDWHILE
 
+
 // TASK 3 VARIABLE DECLARATIONS
+
 DECLARE TotalAmount <- 0.0 : REAL
 DECLARE TotalPassengers, MostPassengers <- 0 : INTEGER
 DECLARE MaxTrain : STRING
