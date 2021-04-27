@@ -194,7 +194,7 @@ Date: 27/04/2021
 
 Author: [**@Dunroxiz**](https://github.com/Dunroxiz)
 
-commit [105483a](https://github.com/Dunroxiz/Pre-release-Material-2021-P22-MJ-CIE/commit/105483a0d3aacab153cb734e191089685d52d57d)
+commit: [105483a](https://github.com/Dunroxiz/Pre-release-Material-2021-P22-MJ-CIE/commit/105483a0d3aacab153cb734e191089685d52d57d)
 
 **Explanation:**<br>
 
