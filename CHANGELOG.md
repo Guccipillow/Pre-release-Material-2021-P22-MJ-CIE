@@ -188,3 +188,209 @@ All pseudocode files have been updated!
 
 _________
 _________
+### CHANGE #7: Big Update (Small change to the Algorithm and Prompts changes)
+
+Date: 27/04/2021
+
+Author: [**@Dunroxiz**](https://github.com/Dunroxiz)
+
+commit [105483a](https://github.com/Dunroxiz/Pre-release-Material-2021-P22-MJ-CIE/commit/105483a0d3aacab153cb734e191089685d52d57d)
+
+**Explanation:**<br>
+
+#### Update #1 "Train No: " changed to "Journey No: "
+
+In this update, I have updated some prompts. In the previous solution, we asked the user to input Train Number but after reading the pre-release material again.
+There it says, there is only one train that makes 4 return trips. So we shouldnt use "Train No: " in prompts and also shouldn't ask the user for "Train No" as an input.
+To overcome this problem, I have changed the prompt "Train No: " to "Journey No: ". For example:
+
+Before:
+
+1. `PRINT ("Train No: ", index, "| Train Departure Hour: ", UpTime[index], "| Remaining Tickets: ", UpSeats[index])`
+
+2. `PRINT "Enter Train number corresponding to your departure hour: "`
+
+After:
+
+1. `PRINT ("Journey No: ", index, "| Departure Hour: ", UpTime[index], "| Tickets available: ", UpSeats[index])`
+
+2. `PRINT "Enter Journey number for your chosen departure hour: "`
+
+________
+
+#### Update #2  Prompts Updated
+
+The prompts that were too long or had unnecessary words have been updated as well and made short and understandable.<br>
+For example:
+
+Before:
+
+1. `PRINT "Do you want to buy ticket(s)? 'True' for yes and 'False' for no"`
+
+2. `PRINT "Enter 'True' for yes and 'False' for no: "`
+
+3. `PRINT "Enter Train number corresponding to your departure hour: "`
+
+After:
+
+1. `PRINT "Do you want to buy ticket(s)? Enter True or False: "`
+
+2. `"Invalid Input! Enter True or False: "`
+
+3. `PRINT "Enter Journey number for your chosen departure hour: "`
+
+________
+
+#### Update #3  Array starting index changed
+
+Another update is, I have changed the starting index of the Arrays from 0 to 1. This is done because printing/saying "Journey No: 0" doesn't feel right and it would be easy for user to understand the counting starting from 1.<br>
+For example:
+
+Before it would print:
+
+    ```
+    PRINT ">>>>>    TRAIN JOURNEY DISPLAY    <<<<<"
+    FOR index <- 0 TO 3
+        PRINT ("Journey No: ", index, "| Departure Hour: ", UpTime[index], "| Tickets available: ", UpSeats[index])
+        PRINT ("Journey No: ", index, "| Return Hour: ", DownTime[index], "| Tickets available: ", DownSeats[index])
+        PRINT "---------"
+    NEXT index
+    ```
+
+    OUTPUT would be
+    
+    Journey No: 0 | Departure Hour: 09:00 | Tickets available: 480
+    Journey No: 0 | Return Hour: 10:00 | Tickets available: 480
+    .......
+    
+After update it would now print:
+
+    ```
+    PRINT ">>>>>    TRAIN JOURNEY DISPLAY    <<<<<"
+    FOR index <- 1 TO 4
+        PRINT ("Journey No: ", index, "| Departure Hour: ", UpTime[index], "| Tickets available: ", UpSeats[index])
+        PRINT ("Journey No: ", index, "| Return Hour: ", DownTime[index], "| Tickets available: ", DownSeats[index])
+        PRINT "---------"
+    NEXT index
+    ```
+
+    OUTPUT would be
+
+    Journey No: 1 | Departure Hour: 09:00 | Tickets available: 480
+    Journey No: 1 | Return Hour: 10:00 | Tickets available: 480
+    .......
+
+The declarations have been updated also. For example:
+
+Before:
+
+```
+DECLARE UpTime : ARRAY[0:3] OF STRING 
+DECLARE UpSeats : ARRAY[0:3] OF INTEGER
+DECLARE UpPassengers : ARRAY[0:3] OF INTEGER 
+DECLARE UpMoneyTotal : ARRAY[0:3] OF REAL 
+
+DECLARE DownTime : ARRAY[0:3] OF STRING 
+DECLARE DownSeats : ARRAY[0:3] OF INTEGER
+DECLARE DownPassengers : ARRAY[0:3] OF INTEGER 
+DECLARE DownMoneyTotal : ARRAY[0:3] OF REAL 
+```
+
+After:
+
+```
+DECLARE UpTime : ARRAY[1:4] OF STRING 
+DECLARE UpSeats : ARRAY[1:4] OF INTEGER
+DECLARE UpPassengers : ARRAY[1:4] OF INTEGER 
+DECLARE UpMoneyTotal : ARRAY[1:4] OF REAL 
+
+DECLARE DownTime : ARRAY[1:4] OF STRING 
+DECLARE DownSeats : ARRAY[1:4] OF INTEGER
+DECLARE DownPassengers : ARRAY[1:4] OF INTEGER 
+DECLARE DownMoneyTotal : ARRAY[1:4] OF REAL 
+```
+
+All the FOR loops, WHILE loops and prompts have also been updated according to the new Array indexes. For example:
+
+Before: 
+
+1. `FOR index <- 0 TO 3`
+
+2. `WHILE UpTrip < 0 OR UpTrip > 3 DO`
+
+3. `PRINT "Error! Enter Journey number from (0, 1, 2, 3): "`
+
+4. `WHILE DownTrip < UpTrip OR DownTrip > 3 DO`
+
+After:  
+
+1. `FOR index <- 1 TO 4`
+
+2. `WHILE UpTrip < 1 OR UpTrip > 4 DO`
+
+3. `PRINT "Error! Enter Journey number from (1, 2, 3, 4): "`
+
+4. `WHILE DownTrip < UpTrip OR DownTrip > 4 DO`
+
+_______
+#### Update #4 New Print statement added
+
+commit [New Print Statement](https://github.com/Dunroxiz/Pre-release-Material-2021-P22-MJ-CIE/commit/105483a0d3aacab153cb734e191089685d52d57d#diff-c2f12e88103331fd46bc7501fba871121983c7f88653fe13704ce89b48c55572R95)
+
+A new print statement has been added that prints out the price of the two-way journey that user has booked for.<br>
+it only prints this if the seats have been booked.
+
+`PRINT "Total price for two-way journey: $", OneWayCost * 2,`
+
+
+All pseudocode files and pyhton file has been updated!
+_______
+Update #5 Python File Updated
+
+commit: [e4740c0](https://github.com/Dunroxiz/Pre-release-Material-2021-P22-MJ-CIE/commit/e4740c0fcbd4425a20a66a269e2a7055d7cbc34b)
+
+In python file all the changes mentioned above have been applied except Array index starting from 1.<br>
+Instead, I have done this:
+
+I add 1 to the index in print statement so where it should be printing "Journey No: 0" it would now print "Journey No: 1".<br>
+This addition to the index in print statement does not effect the index variable being used in the loop.
+
+    for index in range(0, 4):
+        if UpSeats[index] != 0:
+            print("Journey No:", index + 1, "| Departure Hour:", UpTime[index], "\t| Tickets available:", UpSeats[index], )
+        else:
+            print("Journey No:", index + 1, "| Departure Hour:", UpTime[index], "| Closed!",)
+
+        if DownSeats[index] != 0:
+            print("Journey No:", index + 1, "| Return Hour:", DownTime[index], "\t| Tickets available:", DownSeats[index],)
+        else:
+            print("Journey No:", index + 1, "| Return Hour:", DownTime[index], "| Closed!")
+            
+Plus, regarding the input from user. The user is shown the counting starting from 1.<br>
+When he is asked for input he will enter a number from 1 to 4 but 1 will be subtracted from that number upon assigning it to the variable.<br>
+The validation also remains the same because of this.
+For Example:
+
+Ex#1
+
+    ```
+    UpTrip = int(input("Enter Journey number for your chosen departure hour: ")) - 1
+    while UpTrip not in range(0, 4):
+        UpTrip = int(input("Error! Enter Journey number from (1, 2, 3, 4): ")) - 1
+    ```
+    
+Ex#2
+
+    ```
+    DownTrip = int(input("Enter Journey number for your chosen Return hour: ")) - 1
+    while DownTrip < UpTrip or DownTrip > 3:
+        DownTrip = int(input("Error! Enter Journey number from the given list above: ")) - 1
+    ```
+    
+
+
+
+***All files have been updated!***
+
+_________
+_________
