@@ -182,7 +182,7 @@ After:
 ___
 ___
 
-### 1.6. Keywords correction (No changes to the algorithm)
+## 1.6. Keywords correction (No changes to the algorithm)
 
 Date: 26/04/2021
 
