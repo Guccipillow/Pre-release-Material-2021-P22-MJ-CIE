@@ -6,7 +6,7 @@
   - [1.3. Error corrected in UpTrip validation loop Task 2](#13-error-corrected-in-uptrip-validation-loop-task-2)
   - [1.4. Correction of Keyword error in FOR loop in TASK 3](#14-correction-of-keyword-error-in-for-loop-in-task-3)
   - [1.5. Datatype changed for 2 variables in TASK 3](#15-datatype-changed-for-2-variables-in-task-3)
-    - [1.6. Keywords correction (No changes to the algorithm)](#16-keywords-correction-no-changes-to-the-algorithm)
+  - [1.6. Keywords correction (No changes to the algorithm)](#16-keywords-correction-no-changes-to-the-algorithm)
   - [1.7. Big Update (Small change to the Algorithm and Prompts changes)](#17-big-update-small-change-to-the-algorithm-and-prompts-changes)
     - [1.7.1. "Train No: " changed to "Journey No: "](#171-train-no--changed-to-journey-no-)
     - [1.7.2. Prompts Updated](#172-prompts-updated)
