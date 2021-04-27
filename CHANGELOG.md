@@ -1,20 +1,20 @@
-## Changes index (from least to most recent)
+# 1. Changes index (from least to most recent)
 
-- [Changes index (from least to most recent)](#changes-index-from-least-to-most-recent)
-  - [CHANGE #1: Correction of Minor Mistakes](#change-1-correction-of-minor-mistakes)
-  - [CHANGE #2: Updated Task 1, More efficient now](#change-2-updated-task-1-more-efficient-now)
-  - [CHANGE #3: Error corrected in UpTrip validation loop Task 2](#change-3-error-corrected-in-uptrip-validation-loop-task-2)
-  - [CHANGE #4: Correction of Keyword error in FOR loop in TASK 3](#change-4-correction-of-keyword-error-in-for-loop-in-task-3)
-  - [CHANGE #5: Datatype changed for 2 variables in TASK 3](#change-5-datatype-changed-for-2-variables-in-task-3)
-  - [CHANGE #6: Keywords correction (No changes to the algorithm)](#change-6-keywords-correction-no-changes-to-the-algorithm)
-  - [CHANGE #7: Big Update (Small change to the Algorithm and Prompts changes)](#change-7-big-update-small-change-to-the-algorithm-and-prompts-changes)
-    - [Update #1 "Train No: " changed to "Journey No: "](#update-1-train-no--changed-to-journey-no-)
-    - [Update #2  Prompts Updated](#update-2--prompts-updated)
-    - [Update #3  Array starting index changed](#update-3--array-starting-index-changed)
-    - [Update #4 New Print statement added](#update-4-new-print-statement-added)
-    - [Update #5 Python File Updated](#update-5-python-file-updated)
+- [1. Changes index (from least to most recent)](#1-changes-index-from-least-to-most-recent)
+  - [1.1. Correction of Minor Mistakes](#11-correction-of-minor-mistakes)
+  - [1.2. Updated Task 1, More efficient now](#12-updated-task-1-more-efficient-now)
+  - [1.3. Error corrected in UpTrip validation loop Task 2](#13-error-corrected-in-uptrip-validation-loop-task-2)
+  - [1.4. Correction of Keyword error in FOR loop in TASK 3](#14-correction-of-keyword-error-in-for-loop-in-task-3)
+  - [1.5. Datatype changed for 2 variables in TASK 3](#15-datatype-changed-for-2-variables-in-task-3)
+    - [1.6. Keywords correction (No changes to the algorithm)](#16-keywords-correction-no-changes-to-the-algorithm)
+  - [1.7. Big Update (Small change to the Algorithm and Prompts changes)](#17-big-update-small-change-to-the-algorithm-and-prompts-changes)
+    - [1.7.1. "Train No: " changed to "Journey No: "](#171-train-no--changed-to-journey-no-)
+    - [1.7.2. Prompts Updated](#172-prompts-updated)
+    - [1.7.3. Array starting index changed](#173-array-starting-index-changed)
+    - [1.7.4. New Print statement added](#174-new-print-statement-added)
+    - [1.7.5. Python File Updated](#175-python-file-updated)
 
-### CHANGE #1: Correction of Minor Mistakes
+## 1.1. Correction of Minor Mistakes
 
 DATE: 18/04/2021
 
@@ -30,10 +30,10 @@ Sorry for the inconvenience.
 
 All pseudocode files have been updated
 
-_________
-_________
+___
+___
 
-### CHANGE #2: Updated Task 1, More efficient now
+## 1.2. Updated Task 1, More efficient now
 
 Date: 19/04/2021
 
@@ -79,10 +79,10 @@ NEXT index
 
 All pseudocode files have been updated!
 
-_________
-_________
+___
+___
 
-### CHANGE #3: Error corrected in UpTrip validation loop Task 2
+## 1.3. Error corrected in UpTrip validation loop Task 2
 
 Date: 25/04/2021
 
@@ -121,10 +121,10 @@ WHILE choice = True DO
     ENDWHILE
 ```
 
-_________
-_________
+___
+___
 
-### CHANGE #4: Correction of Keyword error in FOR loop in TASK 3
+## 1.4. Correction of Keyword error in FOR loop in TASK 3
 
 Date: 25/04/2021
 
@@ -155,10 +155,10 @@ NEXT index
 ```
 
 All pseudocode files have been updated
-_________
-_________
+___
+___
 
-### CHANGE #5: Datatype changed for 2 variables in TASK 3
+## 1.5. Datatype changed for 2 variables in TASK 3
 
 Date: 25/04/2021
 
@@ -179,10 +179,10 @@ After:
 
 **All pseudocode files have been updated**
 
-_________
-_________
+___
+___
 
-### CHANGE #6: Keywords correction (No changes to the algorithm)
+### 1.6. Keywords correction (No changes to the algorithm)
 
 Date: 26/04/2021
 
@@ -206,10 +206,10 @@ After:
 
 All pseudocode files have been updated!
 
-_________
-_________
+___
+___
 
-### CHANGE #7: Big Update (Small change to the Algorithm and Prompts changes)
+## 1.7. Big Update (Small change to the Algorithm and Prompts changes)
 
 Date: 27/04/2021
 
@@ -219,7 +219,7 @@ commit: [105483a](https://github.com/Dunroxiz/Pre-release-Material-2021-P22-MJ-C
 
 **Explanation:**
 
-#### Update #1 "Train No: " changed to "Journey No: "
+### 1.7.1. "Train No: " changed to "Journey No: "
 
 In this update, I have updated some prompts. In the previous solution, we asked the user to input Train Number but after reading the pre-release material again.
 There it says, there is only one train that makes 4 return trips. So we shouldnt use "Train No: " in prompts and also shouldn't ask the user for "Train No" as an input.
@@ -237,9 +237,9 @@ After:
 
 2. `PRINT "Enter Journey number for your chosen departure hour: "`
 
-_________
+___
 
-#### Update #2  Prompts Updated
+### 1.7.2. Prompts Updated
 
 The prompts that were too long or had unnecessary words have been updated as well and made short and understandable.<br>
 For example:
@@ -260,9 +260,9 @@ After:
 
 3. `PRINT "Enter Journey number for your chosen departure hour: "`
 
-_________
+___
 
-#### Update #3  Array starting index changed
+### 1.7.3. Array starting index changed
 
 Another update is, I have changed the starting index of the Arrays from 0 to 1. This is done because printing/saying "Journey No: 0" doesn't feel right and it would be easy for user to understand the counting starting from 1.<br>
 For example:
@@ -358,9 +358,9 @@ After:
 
 4. `WHILE DownTrip < UpTrip OR DownTrip > 4 DO`
 
-_______
+___
 
-#### Update #4 New Print statement added
+### 1.7.4. New Print statement added
 
 commit [New Print Statement](https://github.com/Dunroxiz/Pre-release-Material-2021-P22-MJ-CIE/commit/105483a0d3aacab153cb734e191089685d52d57d#diff-c2f12e88103331fd46bc7501fba871121983c7f88653fe13704ce89b48c55572R95)
 
@@ -369,9 +369,9 @@ it only prints this if the seats have been booked.
 
 `PRINT "Total price for two-way journey: $", OneWayCost * 2,`
 
-_______
+___
 
-#### Update #5 Python File Updated
+### 1.7.5. Python File Updated
 
 commit: [e4740c0](https://github.com/Dunroxiz/Pre-release-Material-2021-P22-MJ-CIE/commit/e4740c0fcbd4425a20a66a269e2a7055d7cbc34b)
 
@@ -417,5 +417,5 @@ while DownTrip < UpTrip or DownTrip > 3:
 
 ***All files have been updated!***
 
-_________
-_________
+___
+___
