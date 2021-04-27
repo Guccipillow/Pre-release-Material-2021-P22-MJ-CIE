@@ -2,15 +2,15 @@
 
 // TASK 1 VARIABLE DECLARATIONS
 
-DECLARE UpTime : ARRAY[0:3] OF STRING 
-DECLARE UpSeats : ARRAY[0:3] OF INTEGER
-DECLARE UpPassengers : ARRAY[0:3] OF INTEGER 
-DECLARE UpMoneyTotal : ARRAY[0:3] OF REAL 
+DECLARE UpTime : ARRAY[1:4] OF STRING 
+DECLARE UpSeats : ARRAY[1:4] OF INTEGER
+DECLARE UpPassengers : ARRAY[1:4] OF INTEGER 
+DECLARE UpMoneyTotal : ARRAY[1:4] OF REAL 
 
-DECLARE DownTime : ARRAY[0:3] OF STRING 
-DECLARE DownSeats : ARRAY[0:3] OF INTEGER
-DECLARE DownPassengers : ARRAY[0:3] OF INTEGER 
-DECLARE DownMoneyTotal : ARRAY[0:3] OF REAL 
+DECLARE DownTime : ARRAY[1:4] OF STRING 
+DECLARE DownSeats : ARRAY[1:4] OF INTEGER
+DECLARE DownPassengers : ARRAY[1:4] OF INTEGER 
+DECLARE DownMoneyTotal : ARRAY[1:4] OF REAL 
 
 UpTime <- {"09:00", "11:00", "13:00", "15:00"}
 UpSeats <- {480, 480, 480, 480}
@@ -27,9 +27,9 @@ DECLARE index : INTEGER     //for Loops
 // TASK 1 ALGORITHM
 
 PRINT ">>>>>    TRAIN JOURNEY DISPLAY    <<<<<"
-FOR index <- 0 TO 3
-    PRINT ("Train No: ", index, "| Train Departure Hour: ", UpTime[index], "| Remaining Tickets: ", UpSeats[index])
-    PRINT ("Train No: ", index, "| Train Return Hour: ", DownTime[index], "| Remaining Tickets: ", DownSeats[index])
+FOR index <- 1 TO 4
+    PRINT ("Journey No: ", index, "| Departure Hour: ", UpTime[index], "| Tickets available: ", UpSeats[index])
+    PRINT ("Journey No: ", index, "| Return Hour: ", DownTime[index], "| Tickets available: ", DownSeats[index])
     PRINT "---------"
 NEXT index
 
@@ -44,30 +44,30 @@ DECLARE NumOfPassengers, UpTrip, DownTrip, index : INTEGER
 
 // TASK 2 ALGORITHM
 
-PRINT "Do you want to buy ticket(s)? 'True' for yes and 'False' for no"
+PRINT "Do you want to buy ticket(s)? Enter True or False: "
 INPUT choice
 WHILE choice != True AND choice != False DO
-    PRINT "Enter 'True' for yes and 'False' for no: "
+    PRINT "Invalid Input! Enter True or False: "
     INPUT choice
 ENDWHILE
 
 WHILE choice = True DO
-    PRINT "Enter Train number corresponding to your departure hour: "
+    PRINT "Enter Journey number for your chosen departure hour: "
     INPUT UpTrip
-    WHILE UpTrip < 0 OR UpTrip > 3 DO
-        PRINT "Error! Enter train number from (0, 1, 2, 3): "
+    WHILE UpTrip < 1 OR UpTrip > 4 DO
+        PRINT "Error! Enter Journey number from (1, 2, 3, 4): "
         INPUT UpTrip
     ENDWHILE
     
     PRINT "----- Return Hours Available -----"
-    FOR index <- UpTrip TO 3
-        PRINT "Train No:", index, " | Return Hour:", DownTime[index], " | Remaining Tickets:", DownSeats[index],
+    FOR index <- UpTrip TO 4
+        PRINT "Journey No:", index, " | Return Hour:", DownTime[index], " | Remaining Tickets:", DownSeats[index],
     NEXT index
     
-    PRINT "Enter Train number corresponding to your Return hour: "
+    PRINT "Enter Journey number for your chosen Return hour: "
     INPUT DownTrip
-    WHILE DownTrip < UpTrip OR DownTrip > 3 DO
-        PRINT "Error! Enter Train number from the given list above: "
+    WHILE DownTrip < UpTrip OR DownTrip > 4 DO
+        PRINT "Error! Enter Journey number from the given list above: "
         INPUT DownTrip
     ENDWHILE
     
@@ -80,18 +80,19 @@ WHILE choice = True DO
     
     IF NumOfPassengers > UpSeat[UpTrip] OR NumOfPassengers > DownSeats[DownTrip]
         THEN
-            PRINT "Seats not available for chosen hours"
-            PRINT "Please check the display below for available Seats =>"
+            PRINT "Tickets not available for chosen hours"
+            PRINT "Please check the display below for available tickets =>"
         ELSE
-            PRINT "/// SEATS BOOKED ///"
+            PRINT "/// Tickets BOOKED ///"
             IF NumOfPassengers >= 10 and NumOfPassengers <= 80
                 THEN
-                    FreeTickets <- NumOfPassengers DIV 10     // DIV is INTEGER DIVISION
+                    FreeTickets <- NumOfPassengers DIV 10 // DIV is INTEGER DIVISION
                 ELSE
                     FreeTickets <- 0
             ENDIF
-            
+        
             OneWayCost <- (NumOfPassengers - FreeTickets) * OneWayTicket
+            PRINT "Total price for two-way journey: $", OneWayCost * 2
             
             UpPassengers[UpTrip] <- UpPassengers[UpTrip] + NumOfPassengers
             UpSeats[UpTrip] <- UpSeats[UpTrip] - NumOfPassengers
@@ -101,28 +102,27 @@ WHILE choice = True DO
             DownSeats[DownTrip] <- DownSeats[DownTrip] - NumOfPassengers
             DownMoneyTotal[DownTrip] <- DownMoneyTotal[DownTrip] + OneWayCost
     ENDIF
-    
     PRINT ">>>>>    TRAIN JOURNEY DISPLAY    <<<<<"
-    FOR index <- 0 TO 3
+    FOR index <- 1 TO 4
         IF UpSeats[index] != 0
             THEN
-                PRINT ("Train No: ", index, "| Train Departure Hour: ", UpTime[index], "| Remaining Tickets: ", UpSeats[index])
+                PRINT ("Journey No: ", index, "| Departure Hour: ", UpTime[index], "| Tickets available: ", UpSeats[index])
             ELSE
-                PRINT ("Train No: ", index, "| Train Departure Hour: ", UpTime[index], "| Closed!")
+                PRINT ("Journey No: ", index, "| Departure Hour: ", UpTime[index], "| Closed!")
         ENDIF
         
         IF DownSeats[index] != 0
             THEN
-                PRINT ("Train No: ", index, "| Train Return Hour: ", DownTime[index], "| Remaining Tickets: ", DownSeats[index])
+                PRINT ("Journey No: ", index, "| Return Hour: ", DownTime[index], "| Tickets available: ", DownSeats[index])
             ELSE
-                PRINT ("Train No: ", index, "| Train Return Hour: ", DownTime[index], "| Closed!")
+                PRINT ("Journey No: ", index, "| Return Hour: ", DownTime[index], "| Closed!")
         ENDIF
     NEXT index
     
-    PRINT "Do you want to buy ticket(s)? 'True' for yes and 'False' for no"
+    PRINT "Do you want to buy ticket(s)? Enter True or False"
     INPUT choice
     WHILE choice != True AND choice != False DO
-        PRINT "Enter 'True' for yes and 'False' for no: "
+        PRINT "Invalid Input! Enter True or False: "
         INPUT choice
     ENDWHILE
 ENDWHILE
@@ -138,18 +138,18 @@ DECLARE index : INTEGER
 // TASK 3 ALGORITHM
 
 PRINT "----- END OF THE DAY -----"
-FOR index <- 0 TO 3
-    PRINT ("Train No: ", index, "| Train Departure Hour: ", UpTime[index], "| Number of passengers: ", UpPassengers[index], "| Total money: ", UpMoneyTotal[index])
-    PRINT ("Train No: ", index, "| Train Return Hour: ", DownTime[index], "| Number of passengers: ", DownPassengers[index], "| Total money: ", DownMoneyTotal[index])
+FOR index <- 1 TO 4
+    PRINT ("Journey No: ", index, "| Train Departure Hour: ", UpTime[index], "| No. of passengers: ", UpPassengers[index], "| Total money: ", UpMoneyTotal[index])
+    PRINT ("Journey No: ", index, "| Train Return Hour: ", DownTime[index], "| No. of passengers: ", DownPassengers[index], "| Total money: ", DownMoneyTotal[index])
     PRINT ""  // EMPTY LINE
 NEXT index
 
-FOR index <- 0 TO 3
+FOR index <- 1 TO 4
     TotalPassengers <- TotalPassengers + UpPassengers[index]
     TotalAmount <- TotalAmount + (UpMoneyTotal[index] * 2)
 NEXT index
 
-FOR index <- 0 TO 3
+FOR index <- 1 TO 4
     IF UpPassengers[index] > MostPassengers
         THEN
             MostPassengers <- UpPassengers[index]
