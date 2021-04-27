@@ -343,7 +343,6 @@ it only prints this if the seats have been booked.
 `PRINT "Total price for two-way journey: $", OneWayCost * 2,`
 
 
-All pseudocode files and pyhton file has been updated!
 _______
 Update #5 Python File Updated
 
