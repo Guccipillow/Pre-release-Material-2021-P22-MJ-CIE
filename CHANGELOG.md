@@ -1,6 +1,5 @@
 **Table of Contents (from least to most recent)**
 
-
 - [1.1. Correction of Minor Mistakes](#11-correction-of-minor-mistakes)
 - [1.2. Updated Task 1, More efficient now](#12-updated-task-1-more-efficient-now)
 - [1.3. Error corrected in UpTrip validation loop Task 2](#13-error-corrected-in-uptrip-validation-loop-task-2)
@@ -222,7 +221,7 @@ commit: [105483a](https://github.com/Dunroxiz/Pre-release-Material-2021-P22-MJ-C
 ### 1.7.1. "Train No: " changed to "Journey No: "
 
 In this update, I have updated some prompts. In the previous solution, we asked the user to input Train Number but after reading the pre-release material again.
-There it says, there is only one train that makes 4 return trips. So we shouldnt use "Train No: " in prompts and also shouldn't ask the user for "Train No" as an input.
+There it says, there is only one train that makes 4 return trips. So we shouldn't use "Train No: " in prompts and also shouldn't ask the user for "Train No" as an input.
 To overcome this problem, I have changed the prompt "Train No: " to "Journey No: ". For example:
 
 Before:
