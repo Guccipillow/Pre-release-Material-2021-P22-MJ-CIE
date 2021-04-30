@@ -1,4 +1,4 @@
-**Table of Contents (from least to most recent)**
+**Changes (from least to most recent)**
 
 - [1.1. Correction of Minor Mistakes](#11-correction-of-minor-mistakes)
 - [1.2. Updated Task 1, More efficient now](#12-updated-task-1-more-efficient-now)
