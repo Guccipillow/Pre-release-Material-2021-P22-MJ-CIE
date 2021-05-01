@@ -1,5 +1,9 @@
 **Changes (from least to most recent)**
 
+<!-- @import "[TOC]" {cmd="toc" depthFrom=1 depthTo=6 orderedList=false} -->
+
+<!-- code_chunk_output -->
+
 - [1.1. Correction of Minor Mistakes](#11-correction-of-minor-mistakes)
 - [1.2. Updated Task 1, More efficient now](#12-updated-task-1-more-efficient-now)
 - [1.3. Error corrected in UpTrip validation loop Task 2](#13-error-corrected-in-uptrip-validation-loop-task-2)
@@ -7,11 +11,14 @@
 - [1.5. Datatype changed for 2 variables in TASK 3](#15-datatype-changed-for-2-variables-in-task-3)
 - [1.6. Keywords correction (No changes to the algorithm)](#16-keywords-correction-no-changes-to-the-algorithm)
 - [1.7. Big Update (Small change to the Algorithm and Prompts changes)](#17-big-update-small-change-to-the-algorithm-and-prompts-changes)
-  - [1.7.1. "Train No: " changed to "Journey No: "](#171-train-no--changed-to-journey-no-)
+  - [1.7.1. "Train No: " changed to "Journey No: "](#171-train-no-changed-to-journey-no)
   - [1.7.2. Prompts Updated](#172-prompts-updated)
   - [1.7.3. Array starting index changed](#173-array-starting-index-changed)
   - [1.7.4. New Print statement added](#174-new-print-statement-added)
   - [1.7.5. Python File Updated](#175-python-file-updated)
+- [1.8. New Explanation Documents added](#18-new-explanation-documents-added)
+
+<!-- /code_chunk_output -->
 
 ## 1.1. Correction of Minor Mistakes
 
@@ -21,7 +28,7 @@ commit [204d2ef](https://github.com/Dunroxiz/Pre-release-Material-2021-P22-MJ-CI
 
 Author: [**@Dunroxiz**](https://github.com/Dunroxiz)
 
-**Explanation:**
+**About the Change:**
 
 Updated the pseudocode files because they had some minor mistakes. There are no changes to the Algorithms itself.
 There was a mistake in the last FOR loop.
@@ -40,7 +47,7 @@ commit [b6f69d8](https://github.com/Dunroxiz/Pre-release-Material-2021-P22-MJ-CI
 
 Author: [**@Dunroxiz**](https://github.com/Dunroxiz)
 
-**Explanation:**
+**About the Change:**
 
 Before, The task 1 *Train Journey Display* algorithm had an **IF** statement in the **FOR** loop to check if the tickets were available or not. If tickets were not available it would **PRINT** that the Train for that hour is closed.
 
@@ -89,7 +96,7 @@ commit [f5d2ab5](https://github.com/Dunroxiz/Pre-release-Material-2021-P22-MJ-CI
 
 Author: [**@Dunroxiz**](https://github.com/Dunroxiz)
 
-**Explanation:**
+**About the Change:**
 
 There was a mistake in the condition of the WHILE loop that was being used as a validation for UpTrip.
 **AND** have been changed to **OR**
@@ -131,7 +138,7 @@ Author: [**@Dunroxiz**](https://github.com/Dunroxiz)
 
 commit [6e12d7b](https://github.com/Dunroxiz/Pre-release-Material-2021-P22-MJ-CIE/commit/6e12d7b0405348dd31041a089fbb79076cd644b8)
 
-**Explanation:**
+**About the Change:**
 
 Keyword error in **FOR** loop corrected in Task 3
 
@@ -165,7 +172,7 @@ Author: [**@Dunroxiz**](https://github.com/Dunroxiz)
 
 commit [2ff0acb](https://github.com/Dunroxiz/Pre-release-Material-2021-P22-MJ-CIE/commit/2ff0acba2346d949552de0a579d7b8af60f42d8d)
 
-**Explanation:**
+**About the Change:**
 
 Datatype changed for 2 variables in Task 3<br>
 Datatype changed from **REAL** to **INTEGER** for **TotalPassengers, MostPassengers**.
@@ -189,7 +196,7 @@ Author: [**@Dunroxiz**](https://github.com/Dunroxiz)
 
 commit [2b6748b](https://github.com/Dunroxiz/Pre-release-Material-2021-P22-MJ-CIE/commit/2b6748b4bc0acef7c4f179f988b967f73d080e8d)
 
-**Explanation:**<br>
+**About the Change:**
 
 Check commit to see the changes
 
@@ -216,7 +223,7 @@ Author: [**@Dunroxiz**](https://github.com/Dunroxiz)
 
 commit: [105483a](https://github.com/Dunroxiz/Pre-release-Material-2021-P22-MJ-CIE/commit/105483a0d3aacab153cb734e191089685d52d57d)
 
-**Explanation:**
+**About the Change:**
 
 ### 1.7.1. "Train No: " changed to "Journey No: "
 
@@ -416,4 +423,23 @@ while DownTrip < UpTrip or DownTrip > 3:
 
 ***All files have been updated!***
 
+___
+___
+
+## 1.8. New Explanation Documents added
+
+Date: 01/05/2021
+
+Author: [**@Dunroxiz**](https://github.com/Dunroxiz)
+
+Folder Link: [Explanation of the Solution](https://github.com/Dunroxiz/Pre-release-Material-2021-P22-MJ-CIE/tree/main/Explanation%20of%20the%20Solution)
+
+**About the Change:**
+
+I have added a new document in the new "Explanation of the Solution" folder. This file explains the usage of each variable and array being used in the solution. They are just 2 line explanations.
+There is a .docx, .pdf and .md file.
+
+All files in the repository have been moved to their respective folders.
+
+___
 ___
