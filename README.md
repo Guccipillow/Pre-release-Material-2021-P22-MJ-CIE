@@ -5,14 +5,21 @@ To the best of my ability, I have completed all the requirements given for the t
 I also have tried my best to correct any errors found in my solution. *If you do find any errors please let me know, Thank you.*<br>
 If you have any suggestions regarding the solution. Please feel free to share them.<br>
 
-Files in this repository:
-- 0478_pseudocode_guide.pdf
-- 2210_S21_PM_22.pdf
+Files in this repository:<br>
+- Explanation of the Solution [folder]
+  - Usage of Variables and Arrays in the Solution.docx
+  - Usage of Variables and Arrays in the Solution.md
+  - Usage of Variables and Arrays in the Solution.pdf
+- Pre-release material and Pseudocode Guide [folder]
+  - 0478_pseudocode_guide.pdf
+  - 2210_S21_PM_22.pdf
+- Pseudocode and Python Solutions [folder]
+  - PRM-2021-P22-MJ-pseudocode.docx
+  - PRM-2021-P22-MJ-pseudocode.pdf
+  - PRM-2021-P22-MJ-pseudocode.txt
+  - PRM-2021-P22-MJ-python solution.py
 - CHANGELOG.md
-- PRM-2021-P22-MJ-pseudocode.docx
-- PRM-2021-P22-MJ-pseudocode.pdf
-- PRM-2021-P22-MJ-pseudocode.txt
-- PRM-2021-P22-MJ-python solution.py
+- README.md
 
 
 > *This Solution is not wholly written by me. I have taken help from other solutions as well and produced one solution that I have found best.*
