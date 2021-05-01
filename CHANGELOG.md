@@ -441,5 +441,22 @@ There is a .docx, .pdf and .md file.
 
 All files in the repository have been moved to their respective folders.
 
+**Folders:**<br>
+
+- Explanation of the Solution [folder]
+  - Usage of Variables and Arrays in the Solution.docx
+  - <p>Usage of Variables and Arrays in the Solution.md
+  - Usage of Variables and Arrays in the Solution.pdf
+- Pre-release material and Pseudocode Guide [folder]
+  - 0478_pseudocode_guide.pdf
+  - 2210_S21_PM_22.pdf
+- Pseudocode and Python Solutions [folder]
+  - PRM-2021-P22-MJ-pseudocode.docx
+  - PRM-2021-P22-MJ-pseudocode.pdf
+  - PRM-2021-P22-MJ-pseudocode.txt
+  - <p>PRM-2021-P22-MJ-python solution.py
+- CHANGELOG.md
+- README.md
+
 ___
 ___
