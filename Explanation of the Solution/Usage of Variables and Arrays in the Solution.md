@@ -1,4 +1,4 @@
-# EXPLANATION ON THE USAGE OF EACH VARIABLE & ARRAY IN THE SOLUTION
+# PURPOSE OF EACH VARIABLE & ARRAY IN THE SOLUTION
 
 <!-- @import "[TOC]" {cmd="toc" depthFrom=1 depthTo=6 orderedList=false} -->
 
