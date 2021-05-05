@@ -30,7 +30,7 @@ def ScreenDisplay():  # DECLARING PROCEDURE
                 index + 1,
                 "| Departure Hour:",
                 UpTime[index],
-                "| Closed!",
+                "\t| Closed!",
             )
 
         if DownSeats[index] != 0:
@@ -44,7 +44,11 @@ def ScreenDisplay():  # DECLARING PROCEDURE
             )
         else:
             print(
-                "Journey No:", index + 1, "| Return Hour:", DownTime[index], "| Closed!"
+                "Journey No:",
+                index + 1,
+                "| Return Hour:",
+                DownTime[index],
+                "\t| Closed!",
             )
         print()
         print("-----------------------\n")
@@ -136,7 +140,7 @@ for counti in range(0, 4):
     print(
         "Journey No:",
         counti + 1,
-        "| Departure Hour:",
+        "\t| Departure Hour:",
         UpTime[counti],
         "\t| Number of passengers:",
         UpPassengers[counti],
@@ -147,7 +151,7 @@ for counti in range(0, 4):
     print(
         "Journey No:",
         counti + 1,
-        "| Train Return Hour:",
+        "\t| Return Hour:",
         DownTime[counti],
         "\t| Number of passengers:",
         DownPassengers[counti],
